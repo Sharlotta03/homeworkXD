@@ -1,0 +1,87 @@
+:root {
+  --general-text: #312c27;
+  --title-color: #1f1711;
+  --accent-bg: #ffe0cb;
+  --general-bg: #fff9f4;
+  --accent-color: #ffa55c;
+  --transition: all 0.4s;
+  --border-radius: 20px;
+}
+
+body {
+  font-family: "Montserrat", "Arial", sans-serif;
+  background-color: var(--general-bg);
+  color: var(--general-text);
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1310px;
+  padding: 0 15px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.main {
+  flex-grow: 1;
+}
+
+.button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  border-radius: 60px;
+  padding: 5px 15px;
+  width: 100%;
+  height: 62px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+
+  color: var(--general-text);
+  background-color: var(--accent-color);
+
+  transition: var(--transition);
+}
+
+.button:hover {
+  background: #ff9138;
+}
+
+.about {
+  margin: 140px 0;
+}
+
+.field {
+  display: block;
+  position: relative;
+}
+
+.field span {
+  position: absolute;
+  top: 12px;
+  left: 28px;
+  color: #AC907A;
+}
+
+.field__input {
+  padding: 19px 42px 19px 28px;
+}
+
+.main__about,
+.main__program,
+.main__gallery,
+.main__testimonials {
+  margin-bottom: 140px;
+}
