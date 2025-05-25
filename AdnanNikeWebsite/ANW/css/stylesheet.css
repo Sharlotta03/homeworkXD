@@ -1,0 +1,109 @@
+@font-face {
+  font-family: 'Inter';
+  src: local('Inter Italic'), local('Inter-Italic'),
+    url('../fonts/Inter-Italic.woff2') format('woff2'),
+    url('../fonts/Inter-Italic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Futura';
+  src: local('Futura Heavy Oblique'), local('Futura-HeavyOblique'),
+    url('../fonts/Futura-HeavyOblique.woff2') format('woff2'),
+    url('../fonts/Futura-HeavyOblique.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Futura LT';
+  src: local('FuturaLT-Bold'),
+    url('../fonts/FuturaLT-Bold.woff2') format('woff2'),
+    url('../fonts/FuturaLT-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: local('Inter Regular'), local('Inter-Regular'),
+    url('../fonts/Inter-Regular.woff2') format('woff2'),
+    url('../fonts/Inter-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Futura Bk BT';
+  src: local('Futura Book'), local('Futura-Book'),
+    local('FuturaBkBT-Book'), local('FuturaBT-Book'),
+    url('../fonts/FuturaBkBT-Book.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Futura Bk BT';
+  src: local('Futura Book Italic'), local('Futura-BookItalic'),
+    local('FuturaBkBT-BookItalic'), local('FuturaBT-BookItalic'),
+    url('../fonts/FuturaBkBT-BookItalic.woff2') format('woff2');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Futura Md BT';
+  src: local('Futura Md BT Bold'),
+    local('Futura-MdBT-Bold'),
+    url('../fonts/FuturaMdBT-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Futura Md BT';
+  src: local('Futura Md BT Medium'),
+    local('Futura-MdBT-Medium'),
+    url('../fonts/FuturaMdBT-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Futura Md BT';
+  src: local('Futura Md BT Medium Italic'),
+    local('Futura-MdBT-MediumItalic'),
+    url('../fonts/FuturaMdBT-MediumItalic.woff2') format('woff2');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Futura XBlk IT BT';
+  src: local('Futura Extra Black Italic'),
+    local('Futura-XBlkITBT-ExtraBlackItalic'),
+    url('../fonts/FuturaXBlkITBT-ExtraBlackItalic.woff2') format('woff2');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Futura Hv BT';
+  src: local('Futura Hv BT Heavy'), local('FuturaBT-Heavy'),
+      url('FuturaBT-Heavy.woff2') format('woff2'),
+      url('FuturaBT-Heavy.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}

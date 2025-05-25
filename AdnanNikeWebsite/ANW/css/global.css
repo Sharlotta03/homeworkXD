@@ -1,0 +1,62 @@
+:root {
+  --bg: #000;
+  --text-color: #fff;
+  --font-family: "Futura Bk BT", sans-serif;
+  --second-family: "Futura LtCn BT", sans-serif;
+  --third-family: "Inter", sans-serif;
+  --font3: "Futura XBlkCnIt BT", sans-serif;
+  --font4: "Futura Md BT", sans-serif;
+  --font5: "Futura Hv BT", sans-serif;
+  --font6: "Futura LT", sans-serif;
+  --font7: "Futura-Black", sans-serif;
+  --transition: all 0.3s
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding: 100px;
+}
+
+body {
+  color: var(--text-color);
+  font-family: var(--font-family);
+  line-height: 100%;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.skewed-text {
+  display: inline-block;
+  transform: skewX(-10deg);
+}
+
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background: var(--bg);
+  position: relative;
+}
+
+.container {
+  max-width: 1390px;
+  padding: 0 15px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.button {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  line-height: 75%;
+  z-index: 1;
+  font-size: 16px;
+  border: 1px solid var(--text-color);
+  border-radius: 36px;
+  cursor: pointer;
+}

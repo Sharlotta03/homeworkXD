@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/stylesheet.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link href="css/swiper-bundle.min.css" rel="stylesheet">
+  <title>AdnanNike</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <section class="header__top">
+        <div class="container">
+          <div class="header__top-inner">
+            <div class="header__menu">
+
+              <div class="burger-menu">
+                <a class="burger-icon" href="#">
+                  <span></span>
+                </a>
+              </div>
+
+              <div class="header__nav-cat">
+                <ul class="nav__list-cat">
+                  <li class="nav__item-cat">
+                    <a class="nav__link-cat" href="">
+                      New arrival
+                    </a>
+                  </li>
+                  <li class="nav__item-cat">
+                    <a class="nav__link-cat" href="">
+                      Men
+                    </a>
+                  </li>
+                  <li class="nav__item-cat">
+                    <a class="nav__link-cat" href="">
+                      Women
+                    </a>
+                  </li>
+                  <li class="nav__item-cat">
+                    <a class="nav__link-cat" href="">
+                      Kids
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+            </div>
+            <a class="header__logo" href="#">
+              <img src="img/logos/logo.svg" alt="Логотип компании">
+            </a>
+            <div class="header__nav-pers">
+              <ul class="nav__list-pers">
+                <li class="nav__item-pers">
+                  <a class="nav__link-pers" href="">
+                    <img src="img/icons/search.svg" alt="">
+                  </a>
+                </li>
+                <li class="nav__item-pers">
+                  <a class="nav__link-pers" href="">
+                    <img src="img/icons/account.svg" alt="">
+                  </a>
+                </li>
+                <li class="nav__item-pers">
+                  <a class="nav__link-pers" href="">
+                    <img src="img/icons/shopping-bag.svg" alt="">
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="mobile-menu">
+        <ul class="nav__list-cat">
+          <li class="nav__item-cat">
+            <a class="nav__link-cat" href="">New arrival</a>
+          </li>
+          <li class="nav__item-cat">
+            <a class="nav__link-cat" href="">Men</a>
+          </li>
+          <li class="nav__item-cat">
+            <a class="nav__link-cat" href="">Women</a>
+          </li>
+          <li class="nav__item-cat">
+            <a class="nav__link-cat" href="">Kids</a>
+          </li>
+        </ul>
+      </div>
+      <div class="overlay"></div>
+      <section class="header__hero">
+        <div class="vector-path">
+          <svg viewBox="0 0 1704 50" class="angled-line" width="100%">
+            <defs>
+              <!-- Градиент для линии -->
+              <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="rgba(255, 255, 255, 0)" />
+                <stop offset="60%" stop-color="white" />
+                <stop offset="100%" stop-color="rgba(255, 255, 255, 0)" />
+              </linearGradient>
+
+              <!-- Фильтр свечения -->
+              <filter id="glow1" x="-100%" y="-100%" width="300%" height="300%">
+                <feGaussianBlur stdDeviation="2" result="blur" />
+                <feMerge>
+                  <feMergeNode in="blur" />
+                  <feMergeNode in="SourceGraphic" />
+                </feMerge>
+              </filter>
+
+              <!-- Путь -->
+              <path id="motionPath" d="M0 49 H570 L630 0 H1350 L1410 49 H1704" fill="none" />
+            </defs>
+
+            <!-- Линия -->
+            <path d="M0 49 H570 L630 0 H1350 L1410 49 H1704" fill="none" stroke="url(#grad1)" stroke-width="2"
+              stroke-opacity="0.5" />
+
+            <!-- Светящаяся "точка" — маленький круг -->
+            <circle r="1" stroke="none" fill="white" filter="url(#glow1)" class="glowing-dot">
+              <animateMotion dur="4s" repeatCount="alternate">
+                <mpath href="#motionPath" />
+              </animateMotion>
+              <animate attributeName="opacity" values="0.2;1;0.2" dur="4s" repeatCount="indefinite"
+                keyTimes="0;0.5;1" />
+            </circle>
+          </svg>
+        </div>
+        <div class="vector-path-right">
+          <svg viewBox="0 0 1704 503" class="angled-line-right">
+            <defs>
+              <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" style="stop-color:rgb(255, 255, 255);stop-opacity:1" />
+                <stop offset="100%" style="stop-color:rgba(255, 255, 255, 0);stop-opacity:1" />
+              </linearGradient>
+
+              <path id="motionPath-right" d="M1704 0 H1410 V503 H1704" fill="none" />
+
+              <filter id="glow2" x="-100%" y="-100%" width="300%" height="300%">
+                <feGaussianBlur stdDeviation="2" result="blur" />
+                <feMerge>
+                  <feMergeNode in="blur" />
+                  <feMergeNode in="SourceGraphic" />
+                </feMerge>
+              </filter>
+
+            </defs>
+
+            <path id="linePath1" d="M1704 0 H1410 V503 H1704" fill="none" stroke="url(#grad2)" stroke-width="2"
+              stroke-opacity="0.3" />
+
+            <circle r="1" stroke="none" fill="white" filter="url(#glow2)" class="glowing-dot">
+              <animateMotion dur="4s" repeatCount="alternate">
+                <mpath href="#motionPath-right" />
+              </animateMotion>
+              <animate attributeName="opacity" values="0.2;1;0.2" dur="4s" repeatCount="indefinite"
+                keyTimes="0;0.5;1" />
+            </circle>
+          </svg>
+        </div>
+        <div class="vector-path-left">
+          <svg viewBox="0 0 1410 582" class="angled-line-left">
+            <defs>
+              <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" style="stop-color:rgba(255, 255, 255, 0);stop-opacity:1" />
+                <stop offset="100%" style="stop-color:rgb(255, 255, 255);stop-opacity:1" />
+              </linearGradient>
+
+              <path id="motionPath-left" d="M0 0 H264 L310 46 V536 L264 582 H0" fill="none" />
+
+              <filter id="glow3" x="-100%" y="-100%" width="300%" height="300%">
+                <feGaussianBlur stdDeviation="2" result="blur" />
+                <feMerge>
+                  <feMergeNode in="blur" />
+                  <feMergeNode in="SourceGraphic" />
+                </feMerge>
+              </filter>
+
+            </defs>
+
+            <path id="linePath2" d="M0 0 H264 L310 46 V536 L264 582 H0" fill="none" stroke="url(#grad3)"
+              stroke-width="2" stroke-opacity="0.2" />
+
+            <circle r="1" stroke="none" fill="white" filter="url(#glow3)" class="glowing-dot">
+              <animateMotion dur="4s" repeatCount="alternate">
+                <mpath href="#motionPath-left" />
+              </animateMotion>
+              <animate attributeName="opacity" values="0.2;1;0.2" dur="4s" repeatCount="indefinite"
+                keyTimes="0;0.5;1" />
+            </circle>
+          </svg>
+        </div>
+        <div class="container">
+          <div class="header__background-text">Air jordan 1 retro high dunk high</div>
+          <img class="header__decor" src="img/decor/background/Color.png" alt="">
+          <div class="header__hero-inner">
+            <div class="header__hero-img">
+              <div class="header__shoes">
+                <img class="header__jordan" src="img/decor/background/header-jordan.png" alt="Джордан">
+                <div class="header__rotate-jordan">
+                  <img src="img/decor/background/line.png" alt="">
+                  <img class="header__vector" src="img/icons/360.svg" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="header__hero-text">
+              <h1 class="header__title skewed-text">Air Jordan 1 Retro High OG</h1>
+              <div class="header__subtitle">
+                <div class="header__price">$275</div>
+                <div class="header__size">
+                  <div class="header__size-text">
+                    Size
+                    <p id="number">41</p>
+                    <img src="img/icons/arrow-down.svg" alt="">
+                  </div>
+                  <a href="#">
+                    <img src="img/icons/shopping-bag.svg" alt="">
+                  </a>
+                </div>
+              </div>
+              <a class="header__btn button" href="#">More Details
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M16.8183 8.53941C16.7129 8.46053 16.5929 8.40325 16.4653 8.37084L9.57548 6.78019C9.447 6.75053 9.31394 6.74647 9.18389 6.76823C9.05384 6.78999 8.92934 6.83716 8.81752 6.90703C8.59168 7.04815 8.43116 7.2732 8.37125 7.53268C8.34159 7.66116 8.33752 7.79422 8.35929 7.92427C8.38105 8.05432 8.42822 8.17881 8.49809 8.29064C8.63921 8.51647 8.86426 8.677 9.12374 8.73691L13.6657 9.77825L7.22905 13.8003C7.00413 13.9409 6.84426 14.165 6.78459 14.4234C6.72493 14.6819 6.77037 14.9534 6.91092 15.1783C7.05146 15.4032 7.27559 15.5631 7.53401 15.6228C7.79243 15.6824 8.06397 15.637 8.28888 15.4964L14.7256 11.4743L13.6704 16.0132C13.6402 16.1417 13.6357 16.2749 13.6573 16.4051C13.6788 16.5354 13.7259 16.6601 13.7958 16.772C13.8658 16.884 13.9572 16.981 14.0649 17.0574C14.1725 17.1338 14.2942 17.1882 14.4229 17.2174C14.5514 17.2476 14.6847 17.2521 14.8149 17.2306C14.9451 17.209 15.0698 17.162 15.1818 17.092C15.2937 17.022 15.3907 16.9306 15.4672 16.823C15.5436 16.7154 15.598 16.5936 15.6272 16.4649L17.2178 9.57507C17.2446 9.44617 17.2457 9.31325 17.221 9.18393C17.1768 8.92446 17.0321 8.69288 16.8183 8.53941Z"
+                    fill="white" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="header__bottom">
+        <div class="container">
+          <div class="header__bottom-inner">
+            <div class="header__nav">
+              <a class="header__prev" href="">
+                <svg width="10" height="15" viewBox="0 0 10 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M4.05334 6.99995L8.77334 2.27995C9.02167 2.03014 9.16106 1.6922 9.16106 1.33995C9.16106 0.987704 9.02167 0.649769 8.77334 0.399952C8.64939 0.274981 8.50192 0.175788 8.33944 0.108096C8.17696 0.0404049 8.00269 0.0055542 7.82667 0.0055542C7.65066 0.0055542 7.47638 0.0404049 7.3139 0.108096C7.15142 0.175788 7.00396 0.274981 6.88001 0.399952L1.22667 6.05329C1.1017 6.17724 1.00251 6.3247 0.934818 6.48718C0.867127 6.64966 0.832275 6.82394 0.832275 6.99995C0.832275 7.17597 0.867127 7.35024 0.934818 7.51272C1.00251 7.6752 1.1017 7.82267 1.22667 7.94662L6.88001 13.6666C7.00459 13.7902 7.15235 13.888 7.3148 13.9543C7.47725 14.0207 7.6512 14.0543 7.82667 14.0533C8.00215 14.0543 8.1761 14.0207 8.33855 13.9543C8.501 13.888 8.64875 13.7902 8.77334 13.6666C9.02167 13.4168 9.16106 13.0789 9.16106 12.7266C9.16106 12.3744 9.02167 12.0364 8.77334 11.7866L4.05334 6.99995Z"
+                    fill="white" />
+                </svg>
+                Previous
+              </a>
+              <div class="header__pagination"></div>
+              <a class="header__next" href="">
+                Next
+                <svg width="10" height="15" viewBox="0 0 10 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M5.94666 7.99999L1.22666 12.72C0.978326 12.9698 0.838937 13.3077 0.838937 13.66C0.838937 14.0122 0.978326 14.3502 1.22666 14.6C1.35061 14.725 1.49808 14.8242 1.66056 14.8918C1.82304 14.9595 1.99731 14.9944 2.17333 14.9944C2.34934 14.9944 2.52362 14.9595 2.6861 14.8918C2.84858 14.8242 2.99604 14.725 3.11999 14.6L8.77333 8.94665C8.8983 8.8227 8.99749 8.67524 9.06518 8.51276C9.13287 8.35028 9.16773 8.176 9.16773 7.99999C9.16773 7.82397 9.13287 7.6497 9.06518 7.48722C8.99749 7.32474 8.8983 7.17727 8.77333 7.05332L3.11999 1.33332C2.99541 1.20974 2.84765 1.11198 2.6852 1.04563C2.52275 0.979272 2.3488 0.945637 2.17333 0.946652C1.99785 0.945637 1.8239 0.979272 1.66145 1.04563C1.499 1.11198 1.35125 1.20974 1.22666 1.33332C0.978327 1.58314 0.838938 1.92107 0.838938 2.27332C0.838938 2.62557 0.978327 2.9635 1.22666 3.21332L5.94666 7.99999Z"
+                    fill="white" />
+                </svg>
+              </a>
+            </div>
+            <div class="header__slider swiper">
+              <div class="header__wrapper swiper-wrapper">
+                <div class="header__slide swiper-slide">
+                  <div class="header__item">
+                    <div class="header__item-img">
+                      <img class="header__collection-img" src="img/decor/hero-header/1.png" alt="">
+                    </div>
+                    <div class="header__item-name shoes-name">Nike cosmic unity 2</div>
+                  </div>
+                </div>
+                <div class="header__slide swiper-slide">
+                  <div class="header__item">
+                    <div class="header__item-img">
+                      <img class="header__collection-img" src="img/decor/hero-header/2.png" alt="">
+                    </div>
+                    <div class="header__item-name shoes-name">Nike sb dunk high</div>
+                  </div>
+                </div>
+                <div class="header__slide swiper-slide">
+                  <div class="header__item">
+                    <div class="header__item-img">
+                      <img class="header__collection-img" src="img/decor/hero-header/3.png" alt="">
+                    </div>
+                    <div class="header__item-name shoes-name">Nike dynamo go se</div>
+                  </div>
+                </div>
+                <div class="header__slide swiper-slide">
+                  <div class="header__item">
+                    <div class="header__item-img">
+                      <img class="header__collection-img" src="img/decor/hero-header/1.png" alt="">
+                    </div>
+                    <div class="header__item-name shoes-name">Nike cosmic unity 2</div>
+                  </div>
+                </div>
+                <div class="header__slide swiper-slide">
+                  <div class="header__item">
+                    <div class="header__item-img">
+                      <img class="header__collection-img" src="img/decor/hero-header/2.png" alt="">
+                    </div>
+                    <div class="header__item-name shoes-name">Nike sb dunk high</div>
+                  </div>
+                </div>
+                <div class="header__slide swiper-slide">
+                  <div class="header__item">
+                    <div class="header__item-img">
+                      <img class="header__collection-img" src="img/decor/hero-header/3.png" alt="">
+                    </div>
+                    <div class="header__item-name shoes-name">Nike dynamo go se</div>
+                  </div>
+                </div>
+                <div class="header__scrollbar swiper-scrollbar"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+    <main>
+      <div class="flash-lines">
+        <div class="flash-red" id="repeater1">
+          flash flash flash flash
+        </div>
+        <div class="flash-black" id="repeater2">
+          flash flash flash flash
+        </div>
+      </div>
+      <section class="essence">
+        <div class="container">
+          <div class="essence__inner">
+            <h2 class="essence__title title"><span>The essence </span><img class="title__img-right"
+                src="img/decor/text-pic/girl-1.jpg" alt=""><span class="gradient-text">handcrafted</span>
+              <br><img class="title__img-left" src="img/decor/text-pic/girl-2.png" alt=""><span> of
+                footwear.</span>
+            </h2>
+            <div class="essence__text">
+              <p>
+                In terms of footwear, we are the first in Canada to have opened not simple "shops" but real company
+                outlets
+                that offer the same service as the artisan shops of yesteryear: this to make you go without fail every
+                time
+                you want to buy a pair of handmade genuine leather shoes. Without fear of making mistakes and with the
+                certainty that you will be able to wear them comfortably from the beginning.
+              </p>
+              <p>Are you also curious to find out why hundreds of people choose us every day?</p>
+            </div>
+            <a class="essence__btn button" href="#">
+              Find Out More
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M16.8183 8.53941C16.7129 8.46053 16.5929 8.40325 16.4653 8.37084L9.57548 6.78019C9.447 6.75053 9.31394 6.74647 9.18389 6.76823C9.05384 6.78999 8.92934 6.83716 8.81752 6.90703C8.59168 7.04815 8.43116 7.2732 8.37125 7.53268C8.34159 7.66116 8.33752 7.79422 8.35929 7.92427C8.38105 8.05432 8.42822 8.17881 8.49809 8.29064C8.63921 8.51647 8.86426 8.677 9.12374 8.73691L13.6657 9.77825L7.22905 13.8003C7.00413 13.9409 6.84426 14.165 6.78459 14.4234C6.72493 14.6819 6.77037 14.9534 6.91092 15.1783C7.05146 15.4032 7.27559 15.5631 7.53401 15.6228C7.79243 15.6824 8.06397 15.637 8.28888 15.4964L14.7256 11.4743L13.6704 16.0132C13.6402 16.1417 13.6357 16.2749 13.6573 16.4051C13.6788 16.5354 13.7259 16.6601 13.7958 16.772C13.8658 16.884 13.9572 16.981 14.0649 17.0574C14.1725 17.1338 14.2942 17.1882 14.4229 17.2174C14.5514 17.2476 14.6847 17.2521 14.8149 17.2306C14.9451 17.209 15.0698 17.162 15.1818 17.092C15.2937 17.022 15.3907 16.9306 15.4672 16.823C15.5436 16.7154 15.598 16.5936 15.6272 16.4649L17.2178 9.57507C17.2446 9.44617 17.2457 9.31325 17.221 9.18393C17.1768 8.92446 17.0321 8.69288 16.8183 8.53941Z"
+                  fill="white" />
+              </svg>
+            </a>
+            <div class="essence__img">
+              <img src="img/decor/background/ezgif-red.png" alt="">
+            </div>
+            <div class="essence-vector__path">
+              <svg viewBox="0 0 1410 582" class="angled-line-left">
+                <defs>
+                  <linearGradient id="grad4" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" style="stop-color:rgba(255, 255, 255, 0);stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:rgb(255, 255, 255);stop-opacity:1" />
+                  </linearGradient>
+                </defs>
+                <path id="linePath3" d="M0 0 H264 L310 46 V536 L264 582 H0" fill="none" stroke="url(#grad4)"
+                  stroke-width="2" stroke-opacity="0.2" />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="sellers">
+        <div class="container">
+          <div class="sellers__inner">
+            <div class="sellers__title title gradient-text">Best sellers</div>
+            <div class="sellers__gallery">
+              <div class="gallery__item">
+                <img src="img/decor/best-sellers/women.jpg" alt="">
+                <span>Women</span>
+              </div>
+              <div class="gallery__item">
+                <img src="img/decor/best-sellers/kids.jpg" alt="">
+                <span>Kids</span>
+              </div>
+              <div class="gallery__item">
+                <img src="img/decor/best-sellers/men.jpg" alt="">
+                <span>Men</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="time">
+        <div class="container">
+          <div class="time__inner">
+            <div class="time__title">
+              <div class="gradient">Sports</div> <span>time</span>
+            </div>
+            <div class="time__grid">
+              <a class="grid__item shoes-name" href="#">
+                <img src="img/decor/sports-time/1.png" alt="Кроссовок">
+                Nike Air Max Plus 3
+              </a>
+              <a class="grid__item shoes-name" href="#">
+                <img src="img/decor/sports-time/2.png" alt="Кроссовок">
+                Air Jordan 4 Retro Lightning (Premium Batch)
+              </a>
+              <a class="grid__item shoes-name" href="#">
+                <img src="img/decor/sports-time/3.png" alt="Кроссовок">
+                Air Jordan 13 Retro Court Purple (Reflective)
+              </a>
+              <a class="grid__item shoes-name" href="#">
+                <img src="img/decor/sports-time/4.png" alt="Кроссовок">
+                Air Jordan 1 AJKO Blue Red
+              </a>
+              <a class="grid__item shoes-name" href="#">
+                <img src="img/decor/sports-time/5.png" alt="Кроссовок">
+                Yeezy Boost 350 V2 MX Rock (Real Boost)
+              </a>
+              <a class="grid__item shoes-name" href="#">
+                <img src="img/decor/sports-time/6.png" alt="Кроссовок">
+                Vans Old Skool Suede Honey Gold
+              </a>
+            </div>
+            <a class="time__btn button" href="#">
+              Lets Discover More
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M16.8183 8.53941C16.7129 8.46053 16.5929 8.40325 16.4653 8.37084L9.57548 6.78019C9.447 6.75053 9.31394 6.74647 9.18389 6.76823C9.05384 6.78999 8.92934 6.83716 8.81752 6.90703C8.59168 7.04815 8.43116 7.2732 8.37125 7.53268C8.34159 7.66116 8.33752 7.79422 8.35929 7.92427C8.38105 8.05432 8.42822 8.17881 8.49809 8.29064C8.63921 8.51647 8.86426 8.677 9.12374 8.73691L13.6657 9.77825L7.22905 13.8003C7.00413 13.9409 6.84426 14.165 6.78459 14.4234C6.72493 14.6819 6.77037 14.9534 6.91092 15.1783C7.05146 15.4032 7.27559 15.5631 7.53401 15.6228C7.79243 15.6824 8.06397 15.637 8.28888 15.4964L14.7256 11.4743L13.6704 16.0132C13.6402 16.1417 13.6357 16.2749 13.6573 16.4051C13.6788 16.5354 13.7259 16.6601 13.7958 16.772C13.8658 16.884 13.9572 16.981 14.0649 17.0574C14.1725 17.1338 14.2942 17.1882 14.4229 17.2174C14.5514 17.2476 14.6847 17.2521 14.8149 17.2306C14.9451 17.209 15.0698 17.162 15.1818 17.092C15.2937 17.022 15.3907 16.9306 15.4672 16.823C15.5436 16.7154 15.598 16.5936 15.6272 16.4649L17.2178 9.57507C17.2446 9.44617 17.2457 9.31325 17.221 9.18393C17.1768 8.92446 17.0321 8.69288 16.8183 8.53941Z"
+                  fill="white" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="provide">
+        <div class="container">
+          <div class="provide__inner">
+            <div class="provide__img">
+              <div class="provide__img--bg"></div>
+              <div class="provide__img--square"></div>
+              <img src="img/decor/background/modern-shoes.png" alt="">
+            </div>
+            <div class="provide__text">
+              <div class="provide__title title">We provide modern shoes</div>
+              <p>Design for the way you live your life. Atoms are beautiful in their
+                simplicity, supporting your feet with absolute comfort.</p>
+              <a class="provide__btn button" href="#">
+                Explore More
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M16.8183 8.53941C16.7129 8.46053 16.5929 8.40325 16.4653 8.37084L9.57548 6.78019C9.447 6.75053 9.31394 6.74647 9.18389 6.76823C9.05384 6.78999 8.92934 6.83716 8.81752 6.90703C8.59168 7.04815 8.43116 7.2732 8.37125 7.53268C8.34159 7.66116 8.33752 7.79422 8.35929 7.92427C8.38105 8.05432 8.42822 8.17881 8.49809 8.29064C8.63921 8.51647 8.86426 8.677 9.12374 8.73691L13.6657 9.77825L7.22905 13.8003C7.00413 13.9409 6.84426 14.165 6.78459 14.4234C6.72493 14.6819 6.77037 14.9534 6.91092 15.1783C7.05146 15.4032 7.27559 15.5631 7.53401 15.6228C7.79243 15.6824 8.06397 15.637 8.28888 15.4964L14.7256 11.4743L13.6704 16.0132C13.6402 16.1417 13.6357 16.2749 13.6573 16.4051C13.6788 16.5354 13.7259 16.6601 13.7958 16.772C13.8658 16.884 13.9572 16.981 14.0649 17.0574C14.1725 17.1338 14.2942 17.1882 14.4229 17.2174C14.5514 17.2476 14.6847 17.2521 14.8149 17.2306C14.9451 17.209 15.0698 17.162 15.1818 17.092C15.2937 17.022 15.3907 16.9306 15.4672 16.823C15.5436 16.7154 15.598 16.5936 15.6272 16.4649L17.2178 9.57507C17.2446 9.44617 17.2457 9.31325 17.221 9.18393C17.1768 8.92446 17.0321 8.69288 16.8183 8.53941Z"
+                    fill="white" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="favorite">
+        <div class="container">
+          <div class="favorite__inner">
+            <h3 class="favorite__title title">Our favorite <span class="glowing">Nike</span> Styles<span>.</span></h3>
+            <div class="favorite__slider swiper">
+              <div class="favorite__wrapper swiper-wrapper">
+                <div class="favorite__slide swiper-slide">
+                  <div class="favorite__item">
+                    <div class="favorite__item-img">
+                      <div class="favorite--bg"></div>
+                      <img class="favorite__collection-img" src="img/decor/favorite/1.png" alt="">
+                    </div>
+                    <div class="favorite__item-name">NIKE Mercurial Superfly<span>$271</span></div>
+                  </div>
+                </div>
+                <div class="favorite__slide swiper-slide">
+                  <div class="favorite__item">
+                    <div class="favorite__item-img">
+                      <div class="favorite--bg"></div>
+                      <img class="favorite__collection-img" src="img/decor/favorite/2.png" alt="">
+                    </div>
+                    <div class="favorite__item-name">NIKE Air Zoom Alphafly<span>$216</span></div>
+                  </div>
+                </div>
+                <div class="favorite__slide swiper-slide">
+                  <div class="favorite__item">
+                    <div class="favorite__item-img">
+                      <div class="favorite--bg"></div>
+                      <img class="favorite__collection-img" src="img/decor/favorite/3.png" alt="">
+                    </div>
+                    <div class="favorite__item-name">NIKE Dunk High<span>$187</span></div>
+                  </div>
+                </div>
+                <div class="favorite__slide swiper-slide">
+                  <div class="favorite__item">
+                    <div class="favorite__item-img">
+                      <div class="favorite--bg"></div>
+                      <img class="favorite__collection-img" src="img/decor/favorite/1.png" alt="">
+                    </div>
+                    <div class="favorite__item-name">NIKE Mercurial Superfly<span>$271</span></div>
+                  </div>
+                </div>
+                <div class="favorite__slide swiper-slide">
+                  <div class="favorite__item">
+                    <div class="favorite__item-img">
+                      <div class="favorite--bg"></div>
+                      <img class="favorite__collection-img" src="img/decor/favorite/2.png" alt="">
+                    </div>
+                    <div class="favorite__item-name">NIKE Air Zoom Alphafly<span>$216</span></div>
+                  </div>
+                </div>
+                <div class="favorite__slide swiper-slide">
+                  <div class="favorite__item">
+                    <div class="favorite__item-img">
+                      <div class="favorite--bg"></div>
+                      <img class="favorite__collection-img" src="img/decor/favorite/3.png" alt="">
+                    </div>
+                    <div class="favorite__item-name">NIKE Dunk High<span>$187</span></div>
+                  </div>
+                </div>
+                <div class="favorite__scrollbar swiper-scrollbar"></div>
+              </div>
+            </div>
+            <div class="brends__slider swiper">
+              <div class="brends__wrapper swiper-wrapper">
+                <div class="brends__slide swiper-slide">
+                  <div class="brends__item">
+                    <div class="brends__item-img">
+                      <img src="img/decor/brends/adidas.svg" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="brends__slide swiper-slide">
+                  <div class="brends__item">
+                    <div class="brends__item-img">
+                      <img src="img/decor/brends/nike.svg" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="brends__slide swiper-slide">
+                  <div class="brends__item">
+                    <div class="brends__item-img">
+                      <img src="img/decor/brends/puma.svg" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="brends__slide swiper-slide">
+                  <div class="brends__item">
+                    <div class="brends__item-img">
+                      <img src="img/decor/brends/converse.svg" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="brends__slide swiper-slide">
+                  <div class="brends__item">
+                    <div class="brends__item-img">
+                      <img src="img/decor/brends/reebok.svg" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="brends__slide swiper-slide">
+                  <div class="brends__item">
+                    <div class="brends__item-img">
+                      <img src="img/decor/brends/vans.svg" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="brends__slide swiper-slide">
+                  <div class="brends__item">
+                    <div class="brends__item-img">
+                      <img src="img/decor/brends/jordan.svg" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="brends__slide swiper-slide">
+                  <div class="brends__item">
+                    <div class="brends__item-img">
+                      <img src="img/decor/brends/nb.svg" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="brends__slide swiper-slide">
+                  <div class="brends__item">
+                    <div class="brends__item-img">
+                      <img src="img/decor/brends/puma.svg" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="brends__slide swiper-slide">
+                  <div class="brends__item">
+                    <div class="brends__item-img">
+                      <img src="img/decor/brends/reebok.svg" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="brends__scrollbar swiper-scrollbar"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="best">
+        <div class="container">
+          <div class="best__inner">
+            <div class="best__text">
+              <h2 class="best__title title">Best shoes for the best people</h2>
+              <p>Design for the way you live your life. Atoms are beautiful in
+                their simplicity, supporting your feet with absolute comfort.</p>
+              <a class="best__btn button" href="#">
+                Explore More
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M16.8183 8.53941C16.7129 8.46053 16.5929 8.40325 16.4653 8.37084L9.57548 6.78019C9.447 6.75053 9.31394 6.74647 9.18389 6.76823C9.05384 6.78999 8.92934 6.83716 8.81752 6.90703C8.59168 7.04815 8.43116 7.2732 8.37125 7.53268C8.34159 7.66116 8.33752 7.79422 8.35929 7.92427C8.38105 8.05432 8.42822 8.17881 8.49809 8.29064C8.63921 8.51647 8.86426 8.677 9.12374 8.73691L13.6657 9.77825L7.22905 13.8003C7.00413 13.9409 6.84426 14.165 6.78459 14.4234C6.72493 14.6819 6.77037 14.9534 6.91092 15.1783C7.05146 15.4032 7.27559 15.5631 7.53401 15.6228C7.79243 15.6824 8.06397 15.637 8.28888 15.4964L14.7256 11.4743L13.6704 16.0132C13.6402 16.1417 13.6357 16.2749 13.6573 16.4051C13.6788 16.5354 13.7259 16.6601 13.7958 16.772C13.8658 16.884 13.9572 16.981 14.0649 17.0574C14.1725 17.1338 14.2942 17.1882 14.4229 17.2174C14.5514 17.2476 14.6847 17.2521 14.8149 17.2306C14.9451 17.209 15.0698 17.162 15.1818 17.092C15.2937 17.022 15.3907 16.9306 15.4672 16.823C15.5436 16.7154 15.598 16.5936 15.6272 16.4649L17.2178 9.57507C17.2446 9.44617 17.2457 9.31325 17.221 9.18393C17.1768 8.92446 17.0321 8.69288 16.8183 8.53941Z"
+                    fill="white" />
+                </svg>
+              </a>
+            </div>
+            <div class="best__img">
+              <div class="best__img--bg"></div>
+              <div class="best__item b-item1">
+                <img src="img/decor/best-shoes/1.jpg" alt="">
+              </div>
+              <div class="best__item b-item2">
+                <img src="img/decor/best-shoes/2.jpg" alt="">
+              </div>
+              <div class="best__item b-item3">
+                <img src="img/decor/best-shoes/3.jpg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="visionaries">
+        <div class="container">
+          <div class="visionaries__inner">
+            <div class="visionaries__img">
+              <img src="img/decor/background/wb-picture.jpg" alt="кроссовки">
+            </div>
+            <div class="visionaries__text">
+              <h2 class="visionaries__title title">We are <span>visionaries</span></h2>
+              <p class="visionaries-p--small">Exploring the boundaries of footwear with expert design knowledge and
+                manufacture in mind.</p>
+              <p><span>Insightful creative direction :</span> Uniting Consumer Insights with progressive
+                manufacturing methods, we create comprehensive plans to outpace your competition.
+              </p>
+              <p><span>Purposeful design :</span> We create products that captivate consumers and elevate brands.
+                applying a refined
+                sense of beauty and style, our designs are alluring.</p>
+              <p><span>Relentless innovations :</span> We live to challenge the boundaries of convention and take
+                advantage of every
+                breakthrough opportunity big or small. we’ll help you define the cutting-edge of your business.</p>
+              <div class="visionaries__btn button">
+                Customization Available
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M16.8183 8.53941C16.7129 8.46053 16.5929 8.40325 16.4653 8.37084L9.57548 6.78019C9.447 6.75053 9.31394 6.74647 9.18389 6.76823C9.05384 6.78999 8.92934 6.83716 8.81752 6.90703C8.59168 7.04815 8.43116 7.2732 8.37125 7.53268C8.34159 7.66116 8.33752 7.79422 8.35929 7.92427C8.38105 8.05432 8.42822 8.17881 8.49809 8.29064C8.63921 8.51647 8.86426 8.677 9.12374 8.73691L13.6657 9.77825L7.22905 13.8003C7.00413 13.9409 6.84426 14.165 6.78459 14.4234C6.72493 14.6819 6.77037 14.9534 6.91092 15.1783C7.05146 15.4032 7.27559 15.5631 7.53401 15.6228C7.79243 15.6824 8.06397 15.637 8.28888 15.4964L14.7256 11.4743L13.6704 16.0132C13.6402 16.1417 13.6357 16.2749 13.6573 16.4051C13.6788 16.5354 13.7259 16.6601 13.7958 16.772C13.8658 16.884 13.9572 16.981 14.0649 17.0574C14.1725 17.1338 14.2942 17.1882 14.4229 17.2174C14.5514 17.2476 14.6847 17.2521 14.8149 17.2306C14.9451 17.209 15.0698 17.162 15.1818 17.092C15.2937 17.022 15.3907 16.9306 15.4672 16.823C15.5436 16.7154 15.598 16.5936 15.6272 16.4649L17.2178 9.57507C17.2446 9.44617 17.2457 9.31325 17.221 9.18393C17.1768 8.92446 17.0321 8.69288 16.8183 8.53941Z"
+                    fill="white" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="join">
+        <div class="container">
+          <div class="join__inner">
+            <div class="join__text">
+              <div class="join__text-left">
+                <h2 class="join__title title">Join our nikeclub & get 15% off</h2>
+                <p>Sign up for free. Join the community, Never pay for shipping.</p>
+                <div class="join__btn button">
+                  Join Us
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M16.8183 8.53941C16.7129 8.46053 16.5929 8.40325 16.4653 8.37084L9.57548 6.78019C9.447 6.75053 9.31394 6.74647 9.18389 6.76823C9.05384 6.78999 8.92934 6.83716 8.81752 6.90703C8.59168 7.04815 8.43116 7.2732 8.37125 7.53268C8.34159 7.66116 8.33752 7.79422 8.35929 7.92427C8.38105 8.05432 8.42822 8.17881 8.49809 8.29064C8.63921 8.51647 8.86426 8.677 9.12374 8.73691L13.6657 9.77825L7.22905 13.8003C7.00413 13.9409 6.84426 14.165 6.78459 14.4234C6.72493 14.6819 6.77037 14.9534 6.91092 15.1783C7.05146 15.4032 7.27559 15.5631 7.53401 15.6228C7.79243 15.6824 8.06397 15.637 8.28888 15.4964L14.7256 11.4743L13.6704 16.0132C13.6402 16.1417 13.6357 16.2749 13.6573 16.4051C13.6788 16.5354 13.7259 16.6601 13.7958 16.772C13.8658 16.884 13.9572 16.981 14.0649 17.0574C14.1725 17.1338 14.2942 17.1882 14.4229 17.2174C14.5514 17.2476 14.6847 17.2521 14.8149 17.2306C14.9451 17.209 15.0698 17.162 15.1818 17.092C15.2937 17.022 15.3907 16.9306 15.4672 16.823C15.5436 16.7154 15.598 16.5936 15.6272 16.4649L17.2178 9.57507C17.2446 9.44617 17.2457 9.31325 17.221 9.18393C17.1768 8.92446 17.0321 8.69288 16.8183 8.53941Z"
+                      fill="white" />
+                  </svg>
+                </div>
+              </div>
+              <div class="join__text-right">
+                <img src="img/logos/logo2.svg" alt="">
+              </div>
+            </div>
+            <div class="join__img">
+              <img src="img/decor/background/ezgif-black.png" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="items">
+        <div class="container">
+          <div class="items__inner">
+            <div class="items__item">
+              <img src="img/icons/truck.svg" alt="">
+              <div class="items__text">
+                <div class="items__title">Free delivery</div>
+                <p>from $29.99</p>
+              </div>
+            </div>
+            <div class="items__item">
+              <img src="img/icons/watch.svg" alt="">
+              <div class="items__text">
+                <div class="items__title">Free withdrawal 1h</div>
+                <p>in store</p>
+              </div>
+            </div>
+            <div class="items__item">
+              <img src="img/icons/security.svg" alt="">
+              <div class="items__text">
+                <div class="items__title">100% secure payment</div>
+                <p>at your service</p>
+              </div>
+            </div>
+            <div class="items__item">
+              <img src="img/icons/parsel.svg" alt="">
+              <div class="items__text">
+                <div class="items__title">Returns & exchanges</div>
+                <p>offered 365 days</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__hero">
+            <div class="footer__hero-left">
+              <h4 class="footer__hero-left-title">Let’s stay in touch</h4>
+              <form class="footer__hero-left-form">
+                <label class="contact__label field">
+                  <input class="contact__input-name field__input" type="email" placeholder="Enter email...">
+                  <!-- <span>Введите имя</span> -->
+                </label>
+                <button class="contact__btn" type="submit">Subscribe</button>
+              </form>
+              <a href="#">
+                <img class="footer__hero-left-logo" src="img/logos/logo-big.svg" alt="Логотип nike">
+              </a>
+            </div>
+            <div class="footer__hero-right">
+              <div class="footer__hero-grid">
+                <div class="footer__hero-grid-item">
+                  <span>Shop</span>
+                  <ul>
+                    <li>
+                      <a href="#">Mens</a>
+                    </li>
+                    <li>
+                      <a href="#">Womens</a>
+                    </li>
+                    <li>
+                      <a href="#">New Arrival</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="footer__hero-grid-item">
+                  <span>Our services</span>
+                  <ul>
+                    <li>
+                      <a href="#">Customize your products</a>
+                    </li>
+                    <li>
+                      <a href="#">Gift Card</a>
+                    </li>
+                    <li>
+                      <a href="#">Maintain & Repair</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="footer__hero-grid-item grid-item--long">
+                  <span>Need help ?</span>
+                  <ul>
+                    <li>
+                      <a href="#">My Account</a>
+                    </li>
+                    <li>
+                      <a href="#">Shipping</a>
+                    </li>
+                    <li>
+                      <a href="#">Return & Exchanges</a>
+                    </li>
+                    <li>
+                      <a href="#">FAQs</a>
+                    </li>
+                    <li>
+                      <a href="#">Rewards</a>
+                    </li>
+                    <li>
+                      <a href="#">Loyalty program</a>
+                    </li>
+                    <li>
+                      <a href="#">How to choose your product?</a>
+                    </li>
+                    <li>
+                      <a href="#">Sports Trends</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="footer__hero-grid-item">
+                  <span>Contact us</span>
+                  <ul>
+                    <li>
+                      <a href="#">Find a Store</a>
+                    </li>
+                    <li>
+                      <a href="#">Contact Us</a>
+                    </li>
+                    <li>
+                      <a href="#">Terms & Conditions</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="footer__hero-grid-item">
+                  <span>Our enterprice</span>
+                  <ul>
+                    <li>
+                      <a href="#">Who are we?</a>
+                    </li>
+                    <li>
+                      <a href="#">Press and news</a>
+                    </li>
+                    <li>
+                      <a href="#">Our alliances</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer__bottom">
+            <div class="footer__bottom-left">
+              2022 Nike, Inc. All Rights Reserved
+              <img src="img/icons/copy.svg" alt="">
+            </div>
+            <div class="footer__bottom-right">
+              <a href="#" class="footer__bottom-right-item">
+                <img src="img/icons/yt.svg" alt="">
+              </a>
+              <a href="#" class="footer__bottom-right-item">
+                <img src="img/icons/facebook.svg" alt="">
+              </a>
+              <a href="#" class="footer__bottom-right-item">
+                <img src="img/icons/twitter.svg" alt="">
+              </a>
+              <a href="#" class="footer__bottom-right-item">
+                <img src="img/icons/inst.svg" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+
+</html>
